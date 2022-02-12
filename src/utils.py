@@ -53,7 +53,7 @@ def create_logger(
 
     logger = logging.getLogger(file_name)
     logger.handlers.clear()
-    logger.setLevel(getattr(logging, level))
+    # logger.setLevel(getattr(logging, level))
 
     if time_zone:
         from pytz import timezone, utc
