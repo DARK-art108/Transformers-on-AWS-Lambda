@@ -1,5 +1,5 @@
 PREDICTION_TYPE = "classification"
-DEFAULT_MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
+MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
 TOKENIZER_NAME = "roberta-base"
 ID_SENTIMENT_MAPPING = {
     "cardiffnlp/twitter-roberta-base-sentiment": {
