@@ -6,7 +6,7 @@ from src import config
 def requests():
     return {
         "texts": ["food was great", "food was bad", "i am going out for food"],
-        "model_name": config.DEFAULT_MODEL_NAME,
+        "model_name": config.MODEL_NAME,
         "tokenizer_name": config.DEFAULT_TOKENIZER_NAME
     }
 
