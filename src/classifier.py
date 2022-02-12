@@ -20,7 +20,7 @@ class Classifier:
 
     @staticmethod
     @lru_cache(maxsize=config.CACHE_MAXSIZE)
-    def get_sentiment_pipline(model_name: str, tokenizer_name: str) -> pipeline:
+    def get_sentiment_pipeline(model_name: str, tokenizer_name: str) -> pipeline:
         logger.info(f"Loading model {model_name}")
         id2label = config.ID_SENTIMENT_MAPPING[model_name]
         label2id = {v: k for k, v in id2label.items()}
