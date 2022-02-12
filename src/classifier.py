@@ -42,7 +42,7 @@ class Classifier:
         texts = [self.get_clean_text(text) for text in request["texts"]]
         model_name = request.get("model_name", config.MODEL_NAME)
         logger.info(f"Predicting sentiment for {len(texts)} using model {model_name}")
-        classification_pipeline = self.get_sentiment_pipline(model_name, tokenizer_name)
+        classification_pipeline = self.get_sentiment_pipeline(model_name, tokenizer_name)
 
         predictions = classification_pipeline(texts)
         for i, pred in enumerate(predictions):
